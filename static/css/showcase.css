@@ -1,0 +1,13 @@
+.card-body {
+  margin: auto;
+}
+.bg-dark {
+  background-color: #050505 !important;
+}
+img {
+  height: 400px;
+  padding-bottom: 10px;
+}
+h1 {
+  text-align: center;
+}

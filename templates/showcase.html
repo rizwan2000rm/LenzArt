@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="{{  url_for('static', filename = 'css/showcase.css')  }}">
+<title>Wall</title>
+{% endblock %}
+
+
+{% block body %}
+
+<h1>Work Showcase</h1>
+
+<div class="container-fluid row justify-content-center">
+    {% for post in posts %}
+    <div class="col-lg-6 col-xl-4">
+        <div class="card bg-dark">
+            <div class="card-body text-center">
+                <div id="img">
+                    <a href="{{ post.img }}"><img src="{{ post.img }}" class="card-img-top" alt="..."></a>
+                </div>
+                <h5 class="card-title">{{ post.name }}</h5>
+                <p class="card-text">{{ post.email }}</p>
+                <p class="card-text">{{ post.sensor }}</p>
+                <p class="card-text">{{ post.camera }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+{% endblock %}

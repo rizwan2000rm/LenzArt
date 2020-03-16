@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+
+{% block head %}
+<link rel="stylesheet" href="{{  url_for('static', filename = 'css/form.css')  }}">
+<title>Submit your Work</title>
+{% endblock %}
+
+
+{% block body %}
+
+<div id="container" class="card bg-dark">
+
+  <h5 class="card-header info-color white-text text-center py-4">
+    <strong>Submit Your Photo</strong>
+  </h5>
+
+  <!--Card content-->
+  <div class="card-body px-lg-5 pt-0">
+
+    <!-- Form -->
+    <form class="text-center" style="color: #757575;" action="#" method="POST">
+
+      <!-- Name -->
+      <div class="md-form mt-3">
+        <input type="text" class="form-control" name="name">
+        <label for="materialContactFormName">Name</label>
+      </div>
+
+      <!-- E-mail -->
+      <div class="md-form">
+        <input type="email" class="form-control" name="email">
+        <label for="materialContactFormEmail">E-mail</label>
+      </div>
+
+      <!-- Img-->
+      <div class="md-form">
+        <input type="text" class="form-control" name="img">
+        <label for="img">Image Link</label>
+      </div>
+
+      <!-- Sensor -->
+      <div class="md-form">
+        <input type="text" class="form-control" name="sensor">
+        <label for="sensor">Sensor (Full Frame/Crop)</label>
+      </div>
+
+      <!-- Format -->
+      <div class="md-form">
+        <input type="text" class="form-control" name="camera">
+        <label for="format">Camera (Mirrorless/DSLR)</label>
+      </div>
+
+      <!-- Send button -->
+      <button class="btn btn-info btn-block" type="submit">Submit</button>
+
+    </form>
+
+  </div>
+
+</div>
+
+{% endblock %}

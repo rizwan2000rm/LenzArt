@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+
+{% block head %}
+<link rel="stylesheet" href="{{  url_for('static', filename = 'css/index.css')  }}">
+<title>Home</title>
+{% endblock %}
+
+
+{% block body %}
+
+<section class="container-fluid px-0">
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <div id="headingGroup" class="text-white d-none d-lg-block mt-5">
+                <h1 class="text-center">Len<span> / z / </span>Art</h1>
+                <h1 class="text-center">Len<span> / z / </span>Art</h1>
+                <h1 class="text-center">Len<span> / z / </span>Art</h1>
+                <h1 class="text-center">Len<span> / z / </span>Art</h1>
+                <h1 class="text-center">Len<span> / z / </span>Art</h1>
+                <h1 class="text-center">Len<span> / z / </span>Art</h1>
+                <h1 class="text-center">Len<span> / z / </span>Art</h1>
+                <h1 class="text-center">Len<span> / z / </span>Art</h1>
+                <h1 class="text-center">Len<span> / z / </span>Art</h1>
+                <h1 class="text-center">Len<span> / z / </span>Art</h1>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <img class="img-fluid" src="{{  url_for('static', filename = 'img/img1.jpg')  }}" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid px-0">
+    <div class="row align-items-center content">
+        <div class="col-md-6 order-2 order-md-1">
+            <img src="{{  url_for('static', filename = 'img/img2.jpg')  }}" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6 text-center order-1 order-md-2">
+            <div class="row justify-content-center">
+                <div class="col-10 col-lg-8 note mb-5 mb-md-0">
+                    <h2>LenzArt</h2>
+                    <img id="icon" src="{{  url_for('static', filename = 'img/icon.png')  }}" alt=""
+                        class="d-none d-md-inline">
+                    <p class="lead ">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Numquam aspernatur
+                        necessitatibus unde. Rerum, cum reiciendis laudantium cumque repudiandae consequatur dolores
+                        beatae.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row align-items-center content">
+        <div class="col-md-6 text-center">
+            <div class="row justify-content-center">
+                <div class="col-10 col-lg-8 note mb-5 mb-md-0">
+                    <h2>LenzArt</h2>
+                    <img id="icon" src="{{  url_for('static', filename = 'img/icon.png')  }}" alt=""
+                        class="d-none d-md-inline">
+                    <p class="lead ">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Numquam aspernatur
+                        necessitatibus unde. Rerum, cum reiciendis laudantium cumque repudiandae consequatur dolores
+                        beatae.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="{{  url_for('static', filename = 'img/img3.jpg')  }}" alt="" class="img-fluid">
+        </div>
+    </div>
+    </div>
+
+
+    <div class="row align-items-center content">
+        <div class="col-md-6 order-2 order-md-1">
+            <img src="{{  url_for('static', filename = 'img/img3.jpg')  }}" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6 text-center order-1 order-md-2">
+            <div class="row justify-content-center">
+                <div class="col-10 col-lg-8 note mb-5 mb-md-0">
+                    <h2>LenzArt</h2>
+                    <img id="icon" src="{{  url_for('static', filename = 'img/icon.png')  }}" alt=""
+                        class="d-none d-md-inline">
+                    <p class="lead ">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Numquam aspernatur
+                        necessitatibus unde. Rerum, cum reiciendis laudantium cumque repudiandae consequatur dolores
+                        beatae.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

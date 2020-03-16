@@ -1,0 +1,33 @@
+body {
+  color: #ffb300;
+  background: #050505;
+  font-family: "Nunito", sans-serif;
+}
+
+.navbar.scrolled {
+  background: #121212;
+  transition: background 500ms;
+}
+
+#mainNavbar {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+#mainNavbar .nav-link {
+  color: whitesmoke;
+}
+
+#mainNavbar .active {
+  color: #ffb300;
+}
+
+#mainNavbar .nav-link:hover {
+  color: #ffb300;
+}
+
+#mainNavbar .navbar-brand {
+  color: #ffd900;
+  font-size: 1.5rem;
+  font-family: "Pacifico", cursive;
+}
